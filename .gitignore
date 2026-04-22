@@ -1,0 +1,69 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+
+# ── Virtual Environment ───────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Spark / Java runtime ──────────────────────────────────────────────────────
+# Local JDK bundled inside the project (very large)
+tools/
+
+# Spark scratch directories
+spark-warehouse/
+metastore_db/
+derby.log
+*.log
+
+# Ivy dependency cache (downloaded JARs for hadoop-aws etc.)
+.ivy2/
+ivy-*.xml
+
+# ── Data ──────────────────────────────────────────────────────────────────────
+# Raw CSVs (downloaded separately via 00_download_data.py)
+data/raw/
+# Generated Parquet files
+data/processed/
+# Keep the data/ directory itself tracked
+!data/.gitkeep
+
+# ── Generated Outputs ─────────────────────────────────────────────────────────
+# All pipeline output: metrics JSONs, plots, logs, sample CSVs
+output/
+# Keep output/ directory itself tracked
+!output/.gitkeep
+
+# ── Trained Models ────────────────────────────────────────────────────────────
+# Saved Spark MLlib models (can be very large)
+output/models/
+
+# ── Reports ───────────────────────────────────────────────────────────────────
+report/*.pdf
+
+# ── Secrets / Environment ─────────────────────────────────────────────────────
+.env
+.env.*
+*.env
+# Never commit actual AWS credentials
+env.sh
+
+# ── IDE / OS ──────────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
