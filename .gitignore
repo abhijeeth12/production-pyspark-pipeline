@@ -32,26 +32,21 @@ derby.log
 .ivy2/
 ivy-*.xml
 
-# ── Data ──────────────────────────────────────────────────────────────────────
-# Raw CSVs (downloaded separately via 00_download_data.py)
+# Data
 data/raw/
-# Generated Parquet files
 data/processed/
-# Keep the data/ directory itself tracked
-!data/.gitkeep
+!data/sample/
 
-# ── Generated Outputs ─────────────────────────────────────────────────────────
-# All pipeline output: metrics JSONs, plots, logs, sample CSVs
-output/
-# Keep output/ directory itself tracked
-!output/.gitkeep
+# Outputs
+output/*
+!output/*.json
+!output/*.png
 
-# ── Trained Models ────────────────────────────────────────────────────────────
-# Saved Spark MLlib models (can be very large)
+# Models
 output/models/
 
-# ── Reports ───────────────────────────────────────────────────────────────────
-report/*.pdf
+# Reports
+!report/*.pdf
 
 # ── Secrets / Environment ─────────────────────────────────────────────────────
 .env

@@ -1,0 +1,41 @@
+{
+  "logistic_regression": {
+    "auc_roc": 0.6433,
+    "accuracy": 0.6008,
+    "f1_score": 0.6372,
+    "precision": 0.7311,
+    "recall": 0.6008,
+    "confusion_matrix": {
+      "tn": 128570,
+      "fp": 85578,
+      "fn": 22746,
+      "tp": 34435
+    }
+  },
+  "random_forest": {
+    "auc_roc": 0.6608,
+    "accuracy": 0.5857,
+    "f1_score": 0.6239,
+    "precision": 0.7383,
+    "recall": 0.5857,
+    "confusion_matrix": {
+      "tn": 121741,
+      "fp": 92407,
+      "fn": 20006,
+      "tp": 37175
+    }
+  },
+  "gbt": {
+    "auc_roc": 0.6369,
+    "accuracy": 0.5862,
+    "f1_score": 0.6243,
+    "precision": 0.7303,
+    "recall": 0.5862,
+    "confusion_matrix": {
+      "tn": 123641,
+      "fp": 90507,
+      "fn": 21776,
+      "tp": 35405
+    }
+  }
+}

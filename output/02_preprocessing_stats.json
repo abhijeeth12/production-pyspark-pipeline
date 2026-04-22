@@ -1,0 +1,23 @@
+{
+  "final_rows": 1356814,
+  "feature_columns": [
+    "Year",
+    "Quarter",
+    "Month",
+    "DayofMonth",
+    "DayOfWeek",
+    "Reporting_Airline",
+    "Origin",
+    "Dest",
+    "CRSDepTime",
+    "CRSArrTime",
+    "CRSElapsedTime",
+    "Distance",
+    "DistanceGroup"
+  ],
+  "target": "ArrDel15",
+  "class_distribution": {
+    "0": 1070232,
+    "1": 286582
+  }
+}

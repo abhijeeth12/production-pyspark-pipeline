@@ -1,0 +1,15 @@
+{
+  "train_count": 458854,
+  "test_count": 271329,
+  "models": {
+    "logistic_regression": {
+      "training_time_sec": 8.11
+    },
+    "random_forest": {
+      "training_time_sec": 18.92
+    },
+    "gbt": {
+      "training_time_sec": 4.87
+    }
+  }
+}
